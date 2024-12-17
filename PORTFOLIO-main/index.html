@@ -1,0 +1,224 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="stylesheet" href="css/font-awesome.css">    
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0 
+        200;0,300;0,400;0,500;0,600;0,700;1,100;1,200; 1, 300;1,400;1,500;1,600;1,700&displa 
+        y=swap" rel="stylesheet">
+        <link rel="icon" href="icon.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="jul">
+            <nav>
+                <h2 class="logo">Portfio<span>lio</span></h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About me" onclick="setActive(this)">About me</a></li>
+                    <li><a href="#Servive" onclick="setActive(this)">Stuff</a></li>
+                    <li><a href="#" onclick="setActive(this)">Skills</a></li>
+                    <li><a href="#contact-me" onclick="setActive(this)">Contact Me</a></li>
+                </ul>
+                <a href="#" class="btn">Like</a>
+            </nav>
+            <div class="image123">
+                <img src="assets/img/main/removebghome.png">
+            </div>
+            <div class="content">
+                <h4>Hello, my name is</h4>
+                <h1>Julius <span>Galvo</span></h1>
+                <h3>I'am a Web Developer</h3>
+                <div class="newslatter">
+                    <form>
+                        <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                        <input type="submit" name="submit" value="Lets Start">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--About us-->
+        <section class="about">
+            <section id="About me">
+            <div class="main">
+                <img src="assets/img/main/Aboutme.JPG" alt="">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <h5>Developer <span>& Designer</span></h5>
+                    <p>Meet Julius, a dynamic and innovati ve student who seamlessly 
+                        blends the worlds of development and design. With an insatiable 
+                        curiosity and a passion for creating digital experiences, 
+                        JUL has become a standout talent in the realm of technology.</p>
+                        <a href="https://www.messenger.com/e2ee/t/7351129504995051" target="_blank">                     
+                            <button type="button">Let's Talk</button>
+                          </a>                     
+                </div>
+            </div>
+          </section>
+        </section>
+
+        
+
+        <!--Service-->
+        <div class="Servive">
+            <div class="title">
+                <section id="Servive">
+                <h2>Portfio<span>lio</h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-image"></i>
+                    <h5>Gallery</h5>
+                    <div class="pra">
+                        <p>Showcases saved items for easy browsing. 
+                              </p>
+
+                               <p style="text-align: center;">
+                                <a class="button" href="Gallery.html">See</a>
+                               </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-regular fa-clipboard"></i>
+                    <h5>Project</h5>
+                    <div class="pra">
+                        <p>Showcases the progress and success I achieved through dedication, innovation, and hard work.
+                              </p>
+
+                               <p style="text-align: center;">
+                                <a class="button" href="Project.html">More</a>
+                               </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h5>Achievements</h5>
+                    <div class="pra">
+                        <p>progress and success in what i have worked on. 
+                              </p>
+
+                               <p style="text-align: center;">
+                                <a class="button" href="Achievements.html">More</a>
+                               </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--contact me-->
+        <section class="contact-me">
+        <div class="contact-me">
+            <p>HELLO BOSSINGG.</p>
+            <a class="button-two" href="#">Hire me</a>  
+
+
+
+            <section id="stats" class="stats section">
+
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+              
+                  <div class="stats_row"> <!-- Flexbox row -->
+              
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/python.png" title="Python" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+          
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/vs_code.png" title="Visual Studio Code" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+          
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/java.png" title="Java" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+          
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/android_studio.png" title="Android Studio" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+          
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/visual_basic.png" title="Visual Basic" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+          
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/visual_studio.png" title="Visual Studio" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+              
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/git.png" title="Git" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+              
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/github.png" title="GitHub" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+          
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/firebase.png" title="Firebase" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+          
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/sql.png" title="SQL" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+          
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/c++.png" title="C++" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+          
+                    <div class="col-lg-1 col-md-2 col-3">
+                      <div class="stats-item">
+                        <img src="assets/img/technologies/arduino.png" title="Arduino" class="img-fluid" />
+                      </div>
+                    </div><!-- End Stats Item -->
+            
+                  </div>
+                </div>
+
+
+
+        </div>
+    </section>
+        
+        <!--footer start-->
+        <footer>
+            <p>Julius John Abogado Galvo</p>
+            <p> HTML, CSS, JAVA SCRIPT</p>
+            <div class="social">
+                <a href="https://www.facebook.com/juliusjohn.galvo.5"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/jlisjhn/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/jjuuulllll"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/JULIUSGALVO"><i class="fa-brands fa-github"></i></i></a>
+                <a href="https://www.tiktok.com/@_juliusjohn?lang=en"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="end">CopyRight By JULIUS</p>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+/* .................Start Projects Section................... */
+#Projects{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 0; 
+    
+    
+}
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.items-links{
+    width: 60%;
+    margin:40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    gap: 40px;
+}
+.item-link{
+    border: 2px solid blue;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: blue;
+    cursor: pointer;
+    border-radius: 30px;
+    transition:  .4s ease;
+}
+.item-link:hover{
+    background: blue;
+    color: #fff;
+}
+.menu-active{
+    background: blue;
+    color: #fff;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.project-img{
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(175, 175, 175, 0.4);   
+    height: 14rem; 
+    animation: SclAnimation .4s ease;
+    position: relative;
+}
+@keyframes SclAnimation {
+    0%{
+        transform: scale(0);
+    }  
+    100%{
+        transform: scale(1);
+    }  
+}
+.project-img:hover .overlay{
+    top: 0;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(transparent,blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: .4s ease;
+}
+.overlay h4{
+    font-size: 20px;
+    color: #fff;
+    
+}
+.overlay p{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+}
+.action-aria{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: .4s ease;
+}
+.btn-light{
+    background: transparent;
+    border-color: #fff;
+    color: #fff;  
+}
+.btn:hover{
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+.btn-light:hover{
+    background: #fff;
+    color: blue;
+}
+.project-img:hover img{
+    transform: scale(1.1);
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: .4s ease;
+}
+/* .................End Projects Section.................... */
+
+
+/* .................Start Projects Section Media Scrin.................... */
+@media (max-width:1024px) {
+    .container{
+        width: 90%;
+    }   
+    .items-links{
+        width: 90%;
+    } 
+}
+@media (max-width:991px) {
+    .items-links{
+        width: 100%;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:600px) {
+    .items-links{       
+        gap: 20px;  
+        flex-wrap: wrap;  
+    }
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+    .project-img{
+        height: max-content;
+    }
+}
+/* .................End Projects Section Media Scrin.................... */
+
